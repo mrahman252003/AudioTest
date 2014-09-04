@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity" >
+
+
+<EditText
+    android:id="@+id/recordingtime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:inputType="number"
+    android:text=" 10">
+<requestFocus/>
+</EditText>  
+    
+   <LinearLayout  android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:layout_below="@+id/recordingtime"
+   		android:id="@+id/linear1"
+   		android:orientation="horizontal" >
+
+	   <Button
+	      	android:id="@+id/start"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:text="Start Record" />
+	
+	   <Button
+	      	android:id="@+id/stop"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:layout_marginLeft="10dp"
+	      	android:enabled="false"
+	      	android:text="Stop Record" />
+   
+   </LinearLayout>
+   
+   <LinearLayout  android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:layout_below="@+id/linear1"
+   		android:id="@+id/linear2"
+   		android:orientation="horizontal" >
+
+	   <Button
+	      	android:id="@+id/play"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:enabled="false"
+	      	android:text="Play Audio" />
+	   
+	   <Button
+	      	android:id="@+id/stopPlay"
+	      	android:layout_width="wrap_content"
+	      	android:layout_height="wrap_content"
+	      	android:enabled="false"
+	      	android:layout_marginLeft="10dp"
+	      	android:text="Stop Audio" />
+	</LinearLayout> 
+
+</RelativeLayout>
